@@ -17,7 +17,6 @@ class ResultXmlTag(private val resultTag: XmlTag) {
     companion object {
         const val RAYSE_TYPE = "template"
     }
-
 }
 
 

@@ -19,12 +19,8 @@
         <notificationGroup displayType="BALLOON" id="intellij-struts"/>
         <codeInsight.daemonBoundCodeVisionProvider
                 implementation="com.github.xukeek.struts.extensions.StrutsUrlCodeVisionProvider"/>
+        <postStartupActivity implementation="com.github.xukeek.struts.extensions.ProjectStartActivity"/>
     </extensions>
-
-    <projectListeners>
-        <listener class="com.github.xukeek.struts.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </projectListeners>
     <actions>
         <action id="com.github.xukeek.action.SearchStrutsAction"
                 class="com.github.xukeek.struts.actions.FindStrutsAction"
